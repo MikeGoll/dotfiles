@@ -281,7 +281,7 @@ label = %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = "  %percentage%%"
+label-volume = " %percentage%%"
 label-volume-foreground = ${root.foreground}
 format-volume-underline = #42F551
 format-muted-underline = #F01818
