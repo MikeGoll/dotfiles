@@ -14,8 +14,8 @@ set $mod_alt Mod1
 floating_modifier $mod_alt
 
 # i3-gaps config for gaps between the windows
-gaps inner 10
-gaps outer 5
+gaps inner 8
+gaps outer 3
 
 # Will only apply gaps if more than one window is open
 #smart_gaps on
@@ -178,6 +178,10 @@ mode "resize" {
 
 # ------------------ Monitor Settings ------------------
 exec --no-startup-id "~/.config/startup.sh"
+
+# ------------------ Program Hotkeys ------------------
+# Using Flameshot to mimic Lightshot
+bindsym Print exec "flameshot; flameshot gui"
 
 # ------------------ Autostart Programs ------------------
 exec --no-startup-id "feh --bg-scale ~/Images/Wallpapers/Rick_Morty.jpg"
