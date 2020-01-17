@@ -12,3 +12,4 @@ alias disk-usage='df -h'
 alias reload_bash='source ~/.bashrc'
 alias cmatrix='unimatrix -n -s 90 -c "cyan" -l "o"'
 PS1='[\u@\h \W]\$ '
+export EDITOR=vim
