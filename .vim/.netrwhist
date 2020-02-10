@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/mike/Documents/Backbone'
+let g:netrw_dirhist_3='/home/mike/Documents'
 let g:netrw_dirhist_2='/home/mike/.vim'
 let g:netrw_dirhist_1='/etc/modules-load.d'
 let g:netrw_dirhist_0='/etc/modprobe.d'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_8='/home/mike'
 let g:netrw_dirhist_7='/home/mike/Documents'
 let g:netrw_dirhist_6='/home/mike/.config'
 let g:netrw_dirhist_5='/home/mike/.config/i3'
-let g:netrw_dirhist_4='/home/mike'
-let g:netrw_dirhist_3='/home/mike/.config/i3'

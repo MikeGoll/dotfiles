@@ -11,5 +11,6 @@ alias hist='cls; history -cw'
 alias disk-usage='df -h'
 alias reload_bash='source ~/.bashrc'
 alias cmatrix='unimatrix -n -s 90 -c "cyan" -l "o"'
+alias lg="./LookingGlass/client/build/looking-glass-client -F"
 PS1='[\u@\h \W]\$ '
 export EDITOR=vim
