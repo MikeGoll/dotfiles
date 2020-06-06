@@ -54,7 +54,7 @@ font pango:DejaVu Sans Mono 10
 #Start a termite terminal 
 bindsym $mod+Return exec termite                           
 #Start Rofi to show applications
-bindsym $mod+d exec rofi -show drun -show-icons -lines 3 -opacity "85" 
+bindsym $mod+d exec rofi -show drun -show-icons -lines 4
 #Lock the screen (via betterlockscreen)
 bindsym $mod_alt+Shift+l exec betterlockscreen -l dimblur 
 
@@ -184,6 +184,6 @@ exec --no-startup-id "~/.config/startup.sh"
 bindsym Print exec "flameshot; flameshot gui"
 
 # ------------------ Autostart Programs ------------------
-exec --no-startup-id "feh --bg-scale ~/Images/Wallpapers/Rick_Morty.jpg"
+exec --no-startup-id "feh --bg-scale ~/Images/Wallpapers/deer1.jpg ~/Images/Wallpapers/deer_widescreen.jpg"
 exec --no-startup-id "picom -b"
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh

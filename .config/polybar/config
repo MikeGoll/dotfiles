@@ -23,7 +23,8 @@ background-alt = #444
 ;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
-primary = #ffb52a
+;Original = #ffb52a
+primary = #3ec0f0 
 secondary = #e60053
 alert = #bd2c40
 
@@ -270,7 +271,7 @@ label = %date%
 [module/time]
 type=internal/date
 time = %H:%M:%S
-time-alt = %H:%M:%S
+;time-alt = %H:%M:%S
 interval = 1
 format-prefix = " "
 format-prefix-foreground = #FFFFFF

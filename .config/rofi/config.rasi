@@ -1,107 +1,70 @@
-* {
-    backgroundcolor: #0a0a0a;
-    bg1: #ffffff;
-    backgroundcoloralternate: #0a0a0a;
-    separatorcolor: #0a0a0a;
-    scrollbarcolor: #3b4252;
-    foregroundcolor: #ffffff;
-    foregroundcolorinverse: #ffffff;
-    selectioncolor: #383838;
-
-    border-color: #0a0a0a;
-    background-color: @backgroundcolor;
-    text-color: @foregroundcolor;
-    margin: 5;
-    margin-bottom: 0;
-    margin-top: 0;
-    spacing: 0;
-}
-
-#listview {
-    spacing: 4;
-    scrollbar: false;
-    margin: 4;
-    dynamic: true;
-
-}
-
-#window {
-    background-color: @backgroundcolor;
-    border-color: @separatorcolor;
-    border: 0;
-    border-radius: 10px;
-}
-
-#mainbox {
-    border: 0;
-    padding: 0;
-    background-color: @backgroundcoloralternate;
-    border-radius: 10px;
-}
-
-#element {
-    padding: 16;
-    border: 0 0 0 0;
-    border-color: @separatorcolor;
-    background-color: @backgroundcoloralternate;
-}
-
-#element.selected.normal {
-    background-color: @selectioncolor;
-    text-color: @foregroundcolorinverse;
-    border-radius: 10px;
-
-    border: 0 0 0 0;
-    border-color: @separatorcolor;
-}
-
-#element.alternate.normal {
-    background-color: @backgroundcoloralternate;
-}
-
-#element.normal.active {
-    background-color: #434c5e;
-}
-
-#element.alternate.active {
-    background-color: #434c5e;
-}
-
-#element.selected.active {
-    background-color: @selectioncolor;
-    text-color: @foregroundcolorinverse;
-    border-radius: 0px;
-
-    border: 0 0 0 0;
-    border-color: @separatorcolor;
-}
-
-#inputbar {
-    border: 0 solid 0 solid 1 solid 0 solid;
-    margin: 0;
-    spacing: 0;
-    border-color: @separatorcolor;
-}
-
-#prompt {
-    padding: 16;
-    background-color: @backgroundcoloralternate;
-    border: 0 1 0 0;
-}
-
-#entry {
-    padding: 16;
-}
-
-#scrollbar {
-    border: 0;
-    width: 8px;
-    handle-color: @scrollbarcolor;
-    handle-width: 8px;
-    background-color: @backgroundcoloralternate;
-}
-
-#scrollbar handle {
-    border: 1px;
-    border-color: #ffffff;
+configuration {
+        modi: "drun,window,run,ssh";
+        width: 40;
+        lines: 1;
+        columns: 1;
+        font: "Roboto 14";
+        bw: 1; //Border Width
+/*      location: 0;*/
+        padding: 10; //Inner Padding
+/*      yoffset: 0;*/
+/*      xoffset: 0;*/
+/*      fixed-num-lines: true;*/
+        show-icons: true;
+        terminal: "urxvtc";
+/*      ssh-client: "ssh";*/
+/*      ssh-command: "{terminal} -e {ssh-client} {host}";*/
+/*      run-command: "{cmd}";*/
+/*      run-list-command: "";*/
+/*      run-shell-command: "{terminal} -e {cmd}";*/
+/*      window-command: "xkill -id {window}";*/
+/*      window-match-fields: "all";*/
+//      backlight: #ccffeedd;
+        background-color: transparent;
+        drun-icon-theme: "breath";
+/*      drun-match-fields: "name,generic,exec,categories";*/
+/*      disable-history: false;*/
+/*      sort: false;*/
+/*      levenshtein-sort: false;*/
+/*      case-sensitive: false;*/
+/*      cycle: true;*/
+/*      sidebar-mode: false;*/
+//      eh: 1;
+/*      auto-select: false;*/
+/*      parse-hosts: false;*/
+/*      parse-known-hosts: true;*/
+/*      combi-modi: "window,run";*/
+/*      matching: "normal";*/
+/*      tokenize: true;*/
+/*      m: "-5";*/
+        line-margin: 8; //Margin top and bottom of lines
+        line-padding: 5; //Padding between lines
+/*      filter: ;*/
+/*      separator-style: "dash";*/
+/*      hide-scrollbar: false;*/
+/*      fullscreen: false;*/
+/*      fake-transparency: false;*/
+        dpi: 100; //Zoom level
+/*      threads: 0;*/
+        scrollbar-width: 10;
+/*      scroll-method: 0;*/
+/*      fake-background: "screenshot";*/
+/*      window-format: "{w}    {i}{c}   {t}";*/
+/*      click-to-exit: true;*/
+/*      show-match: true;*/
+//      theme: "/usr/share/rofi/themes/Adapta-Nokto.rasi";
+        color-normal: "argb:00000000, #FFFFFF, argb:00000000, argb:803ec0f0, #FFFFFF"; //Odd row number background color, Non-selected text color, alternating table row color, selected item background color, selected item text color
+/*      color-urgent: ;*/
+/*      color-active: ;*/
+        color-window: "argb:AA000000, #3ec0f0, #222222";
+/*      max-history-size: 25;*/
+/*      combi-hide-mode-prefix: false;*/
+/*      pid: "/run/user/1000/rofi.pid";*/
+/*      display-window: ;*/
+/*      display-windowcd: ;*/
+        display-run: "run $ ";
+        display-ssh: "ssh $ ";
+/*      display-drun: ;*/
+/*      display-combi: ;*/
+/*      display-keys: ;*/
 }
