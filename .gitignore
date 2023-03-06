@@ -1,0 +1,10 @@
+/*
+
+!.gitignore
+!.config/Qemu
+!.config/rofi
+!.config/i3
+!.config/polybar
+!.config/termite
+!.config/betterlockscreenrc
+!.config/startup.sh
