@@ -57,9 +57,9 @@ font-0 = FontAwesome5Free:style=Solid:size=10;0
 font-1 = FontAwesome5Free:style=Regular:size=10;0
 font-2 = RobotoMonoLight:style=Regular:size=10:3
 
-modules-left = bspwm i3
+modules-left = i3
 modules-center = date mpd
-modules-right = filesystem memory cpu backlight pulseaudio eth time
+modules-right = filesystem memory cpu pulseaudio eth time
 
 tray-position = right
 tray-padding = 2
@@ -107,7 +107,8 @@ mount-0 = /
 format-mounted-underline = #EFF542
 format-unmounted-underline = #000000
 
-label-mounted =  %percentage_used%%
+;label-mounted =  %percentage_used%%
+label-mounted = HDD: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
 
@@ -224,17 +225,16 @@ label = Mem: %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = enp7s0 
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = #9f78e1
 label-connected = %essid%
 
-;format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
+label-disconnected = %ifname% disconnected
+format-disconnected = <label-disconnected>
+format-disconnected-underline = #4bffdc
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
 ;ramp-signal-0 = 
@@ -246,7 +246,7 @@ label-connected = %essid%
 
 [module/eth]
 type = internal/network
-interface = enp5s0
+interface = enp7s0
 interval = 1.0
 
 format-connected-underline = #55aa55
@@ -254,10 +254,9 @@ format-connected-prefix = " "
 format-connected-prefix-foreground = #FFFFFF
 label-connected = %local_ip%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
+label-disconnected = DISCONNECTED 
+format-disconnected = <label-disconnected>
+format-disconnected-underline = #4bffdc
 ;label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]

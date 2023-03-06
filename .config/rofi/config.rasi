@@ -1,6 +1,6 @@
 configuration {
         modi: "drun,window,run,ssh";
-        width: 40;
+        width: 20;
         lines: 1;
         columns: 1;
         font: "Roboto 14";
@@ -19,7 +19,7 @@ configuration {
 /*      run-shell-command: "{terminal} -e {cmd}";*/
 /*      window-command: "xkill -id {window}";*/
 /*      window-match-fields: "all";*/
-//      backlight: #ccffeedd;
+        backlight: #ccffeedd;
         background-color: transparent;
         drun-icon-theme: "breath";
 /*      drun-match-fields: "name,generic,exec,categories";*/
@@ -68,3 +68,4 @@ configuration {
 /*      display-combi: ;*/
 /*      display-keys: ;*/
 }
+@theme "custom-theme.rasi"
