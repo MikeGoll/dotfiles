@@ -53,6 +53,7 @@
     fontbig: "Roboto 18";
 }
 window {
+    width: 850px;
     location: center;
     anchor:   center;
     transparency: "screenshot";
