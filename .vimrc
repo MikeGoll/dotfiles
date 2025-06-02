@@ -9,8 +9,10 @@ set shiftwidth=4
 set expandtab
 set encoding=utf8
 
-if has('nvim')
-else
+if has('nvim') " Options for nvim
+    silent! nmap <C-c> :CodeCompanionChat<CR>
+
+else " Options for vim
 	"=================================================
 	"Vim Plug plugin manager
 	"=================================================
