@@ -8,6 +8,8 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set encoding=utf8
+set hlsearch " Highlight search results
+set termguicolors
 
 if has('nvim') " Options for nvim
     silent! nmap <C-c> :CodeCompanionChat<CR>
