@@ -1,10 +1,19 @@
 /*
 
 !.gitignore
-!.config/Qemu
-!.config/rofi
-!.config/i3
-!.config/polybar
-!.config/termite
+!.vimrc
+
+# Include the .config/ directory itself
+!.config/
+
+# Ignore everything under the .config/ directory unless it is listed below
+.config/*
+
+!.config/rofi/
+!.config/i3/
+!.config/polybar/launch.sh
+!.config/polybar/config
+!.config/termite/
 !.config/betterlockscreenrc
 !.config/startup.sh
+!.config/nvim/
