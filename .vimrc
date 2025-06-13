@@ -7,14 +7,25 @@ set si " Smart Indentation
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set softtabstop=4
 set encoding=utf8
 set hlsearch " Highlight search results
 set termguicolors
+set noswapfile " Disable swap files
+set nofoldenable " Disable folding
+set autoread
+filetype on
 
 if has('nvim') " Options for nvim
     silent! nmap <C-c> :CodeCompanionChat<CR>
 
+    " Copy selection to system clipboard
+    set mouse=a
+    vmap <LeftRelease> "*ygv
+
 else " Options for vim
+    set guioptions=-m
+
 	"=================================================
 	"Vim Plug plugin manager
 	"=================================================
