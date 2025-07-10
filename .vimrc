@@ -1,7 +1,9 @@
 " Options for both vim and nvim
+syntax on
+filetype plugin on
+
 set number
 set relativenumber
-syntax on
 set ai " Auto Indentation
 set si " Smart Indentation
 set tabstop=4
@@ -13,8 +15,6 @@ set hlsearch " Highlight search results
 set termguicolors
 set noswapfile " Disable swap files
 set nofoldenable " Disable folding
-set autoread
-filetype on
 
 if has('nvim') " Options for nvim
     silent! nmap <C-c> :CodeCompanionChat<CR>
@@ -64,6 +64,7 @@ else " Options for vim
 	autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTree | endif
 	silent! nmap <C-p> :NERDTreeToggle<CR>
 	silent! map <F2> :NERDTreeFind<CR>
+	silent! map <C-l> :noh<CR>
 	let g:NERDTreeMapActivateNode="<F3>"
 	let g:NERDTreeMapPreview="<F4>"
 endif
